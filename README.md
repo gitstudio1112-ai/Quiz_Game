@@ -3,7 +3,7 @@ Phase 1: Authentication
       1.	Home Page 
         o	Welcome message 
         o	Login button 
-        o	Register button 
+        o	Register button\n
         o	About the system 
       2.	Register Page 
         o	Name 
