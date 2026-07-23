@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:250px;
+height:100vh;
+background:#1e3c72;
+position:fixed;
+left:0;
+top:0;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+padding:20px;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.sidebar a:hover,
+.sidebar .active{
+background:#2a5298;
+}
+
+/* Main */
+
+.main{
+margin-left:250px;
+padding:30px;
+}
+
+.profile-card{
+background:white;
+max-width:800px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.profile-card h1{
+text-align:center;
+color:#1e3c72;
+margin-bottom:20px;
+}
+
+.profile-img{
+text-align:center;
+margin-bottom:20px;
+}
+
+.profile-img img{
+width:150px;
+height:150px;
+border-radius:50%;
+border:5px solid #1e3c72;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table td{
+padding:12px;
+border-bottom:1px solid #ddd;
+}
+
+table td:first-child{
+font-weight:bold;
+width:200px;
+}
+
+.buttons{
+text-align:center;
+margin-top:25px;
+}
+
+button{
+padding:12px 20px;
+margin:10px;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.edit{
+background:#1e3c72;
+color:white;
+}
+
+.password{
+background:#28a745;
+color:white;
+}
+
+.logout{
+background:#dc3545;
+color:white;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Quiz Game</h2>
+
+<a href="student_dashboard.html">🏠 Dashboard</a>
+<a href="available_quiz.html">📝 Available Quiz</a>
+<a href="quiz_history.html">📜 Quiz History</a>
+<a href="results.html">📊 Results</a>
+<a href="leaderboard.html">🏆 Leaderboard</a>
+<a href="profile.html" class="active">👤 Profile</a>
+<a href="login.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<div class="profile-card">
+
+<h1>👤 Student Profile</h1>
+
+<div class="profile-img">
+
+<img src="https://via.placeholder.com/150" alt="Profile Picture">
+
+</div>
+
+<table>
+
+<tr>
+<td>Full Name</td>
+<td>Dhrumil Patel</td>
+</tr>
+
+<tr>
+<td>Student ID</td>
+<td>STU001</td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>dhrumil@example.com</td>
+</tr>
+
+<tr>
+<td>Phone</td>
+<td>+91 9876543210</td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td>01-01-2005</td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td>BCA</td>
+</tr>
+
+<tr>
+<td>Department</td>
+<td>Computer Science</td>
+</tr>
+
+<tr>
+<td>Total Quizzes</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Completed</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>Average Score</td>
+<td>90%</td>
+</tr>
+
+</table>
+
+<div class="buttons">
+
+<button class="edit" onclick="editProfile()"><a href="edit_profile.html">Edit Profile</a></button>
+
+<button class="password" onclick="changePassword()"><a href="change_password.html">Change Password</a></button>
+
+<button class="logout" onclick="logout()"><a href="login.html">Logout</a></button>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function editProfile(){
+alert("Edit Profile Page");
+}
+
+function changePassword(){
+alert("Change Password Page");
+}
+
+function logout(){
+
+if(confirm("Are you sure you want to logout?")){
+window.location.href="login.html";
+}
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.container{
+width:380px;
+background:#fff;
+padding:35px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.container h2{
+text-align:center;
+color:#1e3c72;
+margin-bottom:25px;
+}
+
+.input-box{
+margin-bottom:20px;
+}
+
+.input-box label{
+display:block;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.input-box input{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:16px;
+}
+
+.options{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+font-size:14px;
+}
+
+.options a{
+text-decoration:none;
+color:#1e3c72;
+}
+
+.options a:hover{
+text-decoration:underline;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#1e3c72;
+color:white;
+border:none;
+border-radius:5px;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#16305d;
+}
+
+.register{
+text-align:center;
+margin-top:20px;
+}
+
+.register a{
+text-decoration:none;
+color:#1e3c72;
+font-weight:bold;
+}
+
+.register a:hover{
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Login</h2>
+
+<form onsubmit="login(event)">
+
+<div class="input-box">
+<label>Email</label>
+<input type="email" placeholder="Enter Email" required>
+</div>
+
+<div class="input-box">
+<label>Password</label>
+<input type="password" placeholder="Enter Password" required>
+</div>
+
+<div class="options">
+
+<label>
+<input type="checkbox">
+Remember Me
+</label>
+
+<a href="#">Forgot Password?</a>
+
+</div>
+
+<button type="submit">Login</button>
+
+<div class="register">
+Don't have an account?
+<a href="register.html">Register</a>
+</div>
+
+</form>
+
+</div>
+
+<script>
+
+function login(event){
+
+event.preventDefault();
+
+window.location.href="student_dashboard.html";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz History</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#1e3c72;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.sidebar h2{
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    transition:.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+    background:#2a5298;
+}
+
+/* Main */
+
+.main{
+    margin-left:250px;
+    padding:30px;
+}
+
+.header{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    margin-bottom:25px;
+}
+
+.header h1{
+    color:#1e3c72;
+}
+
+/* Table */
+
+.history{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#1e3c72;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f1f1f1;
+}
+
+.pass{
+    color:green;
+    font-weight:bold;
+}
+
+.fail{
+    color:red;
+    font-weight:bold;
+}
+
+button{
+    background:#1e3c72;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2a5298;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>Quiz Game</h2>
+
+<a href="student_dashboard.html">🏠 Dashboard</a>
+<a href="available_quiz.html">📝 Available Quiz</a>
+<a href="quiz_history.html" class="active">📜 Quiz History</a>
+<a href="results.html">📊 Results</a>
+<a href="leaderboard.html">🏆 Leaderboard</a>
+<a href="profile.html">👤 Profile</a>
+<a href="login.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+<h1>📜 Quiz History</h1>
+<p>View all quizzes you have attempted.</p>
+</div>
+
+<div class="history">
+
+<table>
+
+<tr>
+<th>No</th>
+<th>Quiz Name</th>
+<th>Date</th>
+<th>Score</th>
+<th>Percentage</th>
+<th>Status</th>
+<th>Review</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Java Programming</td>
+<td>20-07-2026</td>
+<td>18 / 20</td>
+<td>90%</td>
+<td class="pass">Pass</td>
+<td><button>View</button></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>HTML & CSS</td>
+<td>18-07-2026</td>
+<td>23 / 25</td>
+<td>92%</td>
+<td class="pass">Pass</td>
+<td><button>View</button></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>JavaScript</td>
+<td>15-07-2026</td>
+<td>12 / 15</td>
+<td>80%</td>
+<td class="pass">Pass</td>
+<td><button>View</button></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>PHP & MySQL</td>
+<td>12-07-2026</td>
+<td>10 / 20</td>
+<td>50%</td>
+<td class="fail">Fail</td>
+<td><button>View</button></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Database</td>
+<td>08-07-2026</td>
+<td>19 / 20</td>
+<td>95%</td>
+<td class="pass">Pass</td>
+<td><button>View</button></td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script>
+
+let buttons=document.querySelectorAll("button");
+
+buttons.forEach(function(btn){
+
+btn.onclick=function(){
+
+alert("Quiz Review Page");
+
+};
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Available Quizzes</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:250px;
+height:100vh;
+background:#1e3c72;
+position:fixed;
+left:0;
+top:0;
+overflow:auto;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+padding:20px 0;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:15px 25px;
+transition:.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+background:#2a5298;
+}
+
+/* Main Content */
+
+.main{
+margin-left:250px;
+padding:30px;
+}
+
+.header{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+margin-bottom:30px;
+}
+
+.header h1{
+color:#1e3c72;
+}
+
+/* Quiz Cards */
+
+.quiz-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.quiz-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.quiz-card:hover{
+transform:translateY(-5px);
+}
+
+.quiz-card h2{
+color:#1e3c72;
+margin-bottom:10px;
+}
+
+.quiz-card p{
+margin:8px 0;
+color:#555;
+}
+
+.quiz-card button{
+margin-top:15px;
+width:100%;
+padding:12px;
+background:#1e3c72;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.quiz-card button:hover{
+background:#2a5298;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Quiz Game</h2>
+
+<a href="student_dashboard.html">🏠 Dashboard</a>
+<a href="available_quiz.html" class="active">📝 Available Quiz</a>
+<a href="quiz_history.html">📜 Quiz History</a>
+<a href="results.html">📊 Results</a>
+<a href="leaderboard.html">🏆 Leaderboard</a>
+<a href="profile.html">👤 Profile</a>
+<a href="login.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+<h1>📝 Available Quizzes</h1>
+<p>Select a quiz and start your test.</p>
+</div>
+
+<div class="quiz-container">
+
+<div class="quiz-card">
+<h2>Java Programming</h2>
+<p><b>Questions:</b> 20</p>
+<p><b>Time:</b> 30 Minutes</p>
+<p><b>Total Marks:</b> 20</p>
+<button onclick="startQuiz('Java Programming')">Start Quiz</button>
+</div>
+
+<div class="quiz-card">
+<h2>HTML & CSS</h2>
+<p><b>Questions:</b> 25</p>
+<p><b>Time:</b> 35 Minutes</p>
+<p><b>Total Marks:</b> 25</p>
+<button onclick="startQuiz('HTML & CSS')">Start Quiz</button>
+</div>
+
+<div class="quiz-card">
+<h2>JavaScript</h2>
+<p><b>Questions:</b> 15</p>
+<p><b>Time:</b> 20 Minutes</p>
+<p><b>Total Marks:</b> 15</p>
+<button onclick="startQuiz('JavaScript')">Start Quiz</button>
+</div>
+
+<div class="quiz-card">
+<h2>PHP & MySQL</h2>
+<p><b>Questions:</b> 20</p>
+<p><b>Time:</b> 30 Minutes</p>
+<p><b>Total Marks:</b> 20</p>
+<button onclick="startQuiz('PHP & MySQL')">Start Quiz</button>
+</div>
+
+<div class="quiz-card">
+<h2>Python</h2>
+<p><b>Questions:</b> 25</p>
+<p><b>Time:</b> 40 Minutes</p>
+<p><b>Total Marks:</b> 25</p>
+<button onclick="startQuiz('Python')">Start Quiz</button>
+</div>
+
+<div class="quiz-card">
+<h2>Database (MySQL)</h2>
+<p><b>Questions:</b> 20</p>
+<p><b>Time:</b> 25 Minutes</p>
+<p><b>Total Marks:</b> 20</p>
+<button onclick="startQuiz('Database')">Start Quiz</button>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function startQuiz(subject){
+
+alert("Starting " + subject + " Quiz");
+
+// Change this page name if needed
+window.location.href="start_quiz.html";
+
+}
+
+</script>
+
+</body>
+</html>

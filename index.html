@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Management System</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f5f7fa;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#1e3a8a;
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-weight:bold;
+}
+
+.logo span{
+color:gold;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-size:17px;
+transition:.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.btn{
+background:gold;
+color:black;
+padding:10px 20px;
+border-radius:5px;
+font-weight:bold;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
+flex-wrap:wrap;
+}
+
+.left{
+width:50%;
+}
+
+.left h1{
+font-size:50px;
+color:#1e3a8a;
+margin-bottom:20px;
+}
+
+.left p{
+font-size:18px;
+line-height:30px;
+margin-bottom:30px;
+color:#555;
+}
+
+.start{
+display:inline-block;
+background:#1e3a8a;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+}
+
+.right{
+width:40%;
+text-align:center;
+font-size:180px;
+}
+
+.features{
+padding:60px;
+text-align:center;
+}
+
+.features h2{
+color:#1e3a8a;
+margin-bottom:40px;
+font-size:35px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#1e3a8a;
+margin-bottom:15px;
+}
+
+.about{
+padding:60px;
+background:white;
+text-align:center;
+}
+
+.about h2{
+color:#1e3a8a;
+margin-bottom:20px;
+}
+
+.about p{
+font-size:18px;
+line-height:30px;
+max-width:900px;
+margin:auto;
+}
+
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.left,
+.right{
+width:100%;
+}
+
+.left h1{
+font-size:38px;
+}
+
+.right{
+font-size:120px;
+margin-top:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Quiz<span>Game</span>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="login.html" class="btn">Login</a>
+<a href="register.html" class="btn">Register</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="left">
+
+<h1>Welcome to Quiz Management System</h1>
+
+<p>
+Challenge yourself with exciting quizzes, improve your knowledge,
+track your progress, and compete on the leaderboard.
+Teachers can create and manage quizzes with ease.
+</p>
+
+<a href="#" class="start">Get Started</a>
+
+</div>
+
+<div class="right">
+🎓
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Our Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📝 Online Quizzes</h3>
+<p>Create and attempt unlimited quizzes.</p>
+</div>
+
+<div class="card">
+<h3>⏰ Timer</h3>
+<p>Each quiz includes a countdown timer.</p>
+</div>
+
+<div class="card">
+<h3>📊 Instant Results</h3>
+<p>View marks and percentage immediately.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Leaderboard</h3>
+<p>Compare your score with other students.</p>
+</div>
+
+<div class="card">
+<h3>👨‍🏫 Teacher Panel</h3>
+<p>Create, edit and publish quizzes.</p>
+</div>
+
+<div class="card">
+<h3>👨‍🎓 Student Dashboard</h3>
+<p>Track quiz history and performance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>About Quiz Management System</h2>
+
+<p>
+The Quiz Management System is an online platform where teachers can create quizzes,
+manage questions, and publish tests. Students can register, attempt quizzes,
+view instant results, check previous attempts, and compete on the leaderboard.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Quiz Management System | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
