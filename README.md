@@ -1,102 +1,135 @@
 # Quiz_Game
-Phase 1: Authentication
-      1.	Home Page 
-        o	Welcome message 
-        o	Login button 
-        o	Register button\n
-        o	About the system 
-      2.	Register Page 
-        o	Name 
-        o	Email 
-        o	Password 
-        o	Confirm Password
-        o	BOD 
-        o	Verification box
-        o	Role (Student/Teacher) 
-      3.	Login Page 
-        o	Email 
-        o	Password 
-        o	Login button 
-        o	Verification box
-      4.	Logout 
-        o	Destroy session 
-        o	Redirect to Home
-        
-Phase 2: Student Pages
-      5.	Student Dashboard 
-        o	Welcome Student 
-        o	Available Quizzes 
-        o	My Results 
-        o	Leaderboard 
-        o	Logout 
-      6.	View Quizzes (Tag)
-        o	Quiz Name 
-        o	Total Questions 
-        o	Marks 
-        o	Time 
-        o	Start Button 
-      7.	Start Quiz 
-        o	Instructions 
-        o	Start Button 
-      8.	Attempt Quiz 
-        o	Display Questions 
-        o	Multiple Choice Options 
-        o	Next/Previous 
-        o	Timer 
-      9.	Submit Quiz 
-        o	Submit Confirmation 
-        o	Save Answers 
-      10.	Result Page 
-        o	Score 
-        o	Percentage 
-        o	Point
-      11.	Answer Review 
-        o	Correct Answers 
-        o	Wrong Answers 
-        o	Null Answers 
-      12.	Result History 
-        o	Previous Quiz Results 
-      13.	Leaderboard
-        o	Rank 
-        o	Student Name 
-        o	Score 
-        o	Comparison
-      14.	 Profile
-        o	User Information
-        o	Change Password
-        o	Edit Information
-Phase 3: Teacher/Admin Pages
-      14.	Teacher Dashboard 
-        o	Create Quiz 
-        o	Manage Quiz 
-        o	Results 
-        o	Leaderboard 
-      15.	Create Quiz 
-        o	Quiz Title 
-        o	Description 
-        o	Total Marks 
-        o	Time 
-      16.	Add Questions 
-        o	Question 
-        o	Option A 
-        o	Option B 
-        o	Option C 
-        o	Option D 
-        o	Correct Answer 
-        o	Marks 
-      17.	Edit Quiz 
-        o	Update Quiz Details 
-      18.	Edit Question 
-        o	Update Question 
-        o	Update Options 
-      19.	Delete Question 
-      20.	Delete Quiz 
-      21.	Publish Quiz 
-      22.	View Student Results 
-      23.	Leaderboard Management 
-      
-  Common Pages
-    	About 
-    	Contact 
-    	404 Error Page 
-    
+
+## Phase 1: Authentication
+
+### 1. Home Page
+- Welcome Message
+- Login Button
+- Register Button
+- About the System
+
+### 2. Register Page
+- Name
+- Email
+- Password
+- Confirm Password
+- DOB
+- Verification Box
+- Role (Student / Teacher)
+
+### 3. Login Page
+- Email
+- Password
+- Login Button
+- Verification Box
+
+### 4. Logout
+- Destroy Session
+- Redirect to Home Page
+
+---
+
+## Phase 2: Student Pages
+
+### 5. Student Dashboard
+- Welcome Student
+- Available Quizzes
+- My Results
+- Leaderboard
+- Logout
+
+### 6. View Quizzes
+- Quiz Name
+- Total Questions
+- Marks
+- Time
+- Start Button
+
+### 7. Start Quiz
+- Instructions
+- Start Button
+
+### 8. Attempt Quiz
+- Display Questions
+- Multiple Choice Options
+- Next Button
+- Previous Button
+- Timer
+
+### 9. Submit Quiz
+- Submit Confirmation
+- Save Answers
+
+### 10. Result Page
+- Score
+- Percentage
+- Points
+
+### 11. Answer Review
+- Correct Answers
+- Wrong Answers
+- Unanswered Questions
+
+### 12. Result History
+- Previous Quiz Results
+
+### 13. Leaderboard
+- Rank
+- Student Name
+- Score
+- Comparison
+
+### 14. Profile
+- User Information
+- Edit Information
+- Change Password
+
+---
+
+## Phase 3: Teacher / Admin Pages
+
+### 15. Teacher Dashboard
+- Create Quiz
+- Manage Quiz
+- Results
+- Leaderboard
+
+### 16. Create Quiz
+- Quiz Title
+- Description
+- Total Marks
+- Time Limit
+
+### 17. Add Questions
+- Question
+- Option A
+- Option B
+- Option C
+- Option D
+- Correct Answer
+- Marks
+
+### 18. Edit Quiz
+- Update Quiz Details
+
+### 19. Edit Question
+- Update Question
+- Update Options
+
+### 20. Delete Question
+
+### 21. Delete Quiz
+
+### 22. Publish Quiz
+
+### 23. View Student Results
+
+### 24. Leaderboard Management
+
+---
+
+## Common Pages
+
+- About
+- Contact
+- 404 Error Page
