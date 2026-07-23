@@ -2,7 +2,7 @@
 
 ## Phase 1: Authentication
 
-### 1. Home Page
+### 1. Home Page (D)
 - Welcome Message
 - Login Button
 - Register Button
