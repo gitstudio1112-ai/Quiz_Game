@@ -8,7 +8,7 @@
 - Register Button
 - About the System
 
-### 2. Register Page
+### 2. Register Page(S)
 - Name
 - Email
 - Password
