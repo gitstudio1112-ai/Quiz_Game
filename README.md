@@ -23,7 +23,7 @@
 - Login Button
 - Verification Box
 
-### 4. Logout
+### 4. Logout(V)
 - Destroy Session
 - Redirect to Home Page
 
