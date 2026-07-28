@@ -8,7 +8,7 @@
 - Register Button
 - About the System
 
-### 2. Register Page(S)
+### 2. Register Page(V)
 - Name
 - Email
 - Password
@@ -31,21 +31,21 @@
 
 ## Phase 2: Student Pages
 
-### 5. Student Dashboard
+### 5. Student Dashboard(S)
 - Welcome Student
 - Available Quizzes
 - My Results
 - Leaderboard
 - Logout
 
-### 6. View Quizzes
+### 6. View Quizzes(H)
 - Quiz Name
 - Total Questions
 - Marks
 - Time
 - Start Button
 
-### 7. Start Quiz
+### 7. Start Quiz(H)
 - Instructions
 - Start Button
 
